@@ -32,7 +32,7 @@ class TestAndBuildPlugin: Plugin<Project> {
                 group = "build"
                 description = "Runs unit tests and assembles the $variantName variant in one step."
 
-                val unitTestTask = "test${variantName}UniTest"
+                val unitTestTask = "test${variantName}UnitTest"
                 val assembleTask = "assemble${variantName}"
 
                 if (target.tasks.names.contains(unitTestTask)) {
